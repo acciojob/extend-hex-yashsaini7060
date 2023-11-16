@@ -1,5 +1,13 @@
 const extendHex = (shortHex) => {
-  // write your code here
+ let hexlength= shortHex.length;
+ let out=["#"]
+  for(var i=1; i<hexlength; i++){
+      out.push(shortHex[i]);
+      out.push(shortHex[i]);
+  }
+  let text = out.join("");
+  return text;
+  
 };
 
 // Do not change the code below.
