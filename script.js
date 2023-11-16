@@ -1,9 +1,14 @@
 const extendHex = (shortHex) => {
  let hexlength= shortHex.length;
  let out=["#"]
-  for(var i=1; i<hexlength; i++){
+ var i=(shortHex[0]==="#"? 1 : 0);
+ console.log(i)
+ 
+  while(i<hexlength)
+  {
       out.push(shortHex[i]);
       out.push(shortHex[i]);
+      i++
   }
   let text = out.join("");
   return text;
